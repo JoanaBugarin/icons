@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de uso - Icons CDN</title>
+    <!-- Reemplaza 'TU_USUARIO' con tu usuario de GitHub -->
+    <link rel="stylesheet" href="https://TU_USUARIO.github.io/icons/icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .demo-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .icon-demo {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: #fafafa;
+        }
+        .icon-demo .icon {
+            display: block;
+            margin: 0 auto 5px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 Icons CDN - Ejemplo de uso</h1>
+    
+    <div class="demo-section">
+        <h2>Tamaños de íconos</h2>
+        <div class="icon-demo">
+            <span class="icon icon-sm icon-sword"></span>
+            <div>Pequeño (.icon-sm)</div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-sword"></span>
+            <div>Normal</div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-lg icon-sword"></span>
+            <div>Grande (.icon-lg)</div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-xl icon-sword"></span>
+            <div>Extra Grande (.icon-xl)</div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Ejemplos de íconos</h2>
+        <div class="icon-demo">
+            <span class="icon icon-sword"></span>
+            <div><code>.icon-sword</code></div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-shield"></span>
+            <div><code>.icon-shield</code></div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-heart"></span>
+            <div><code>.icon-heart</code></div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-star"></span>
+            <div><code>.icon-star</code></div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-dragon"></span>
+            <div><code>.icon-dragon</code></div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-crown"></span>
+            <div><code>.icon-crown</code></div>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Uso en botones</h2>
+        <button style="padding: 10px 20px; font-size: 16px;">
+            <span class="icon icon-sword"></span> Atacar
+        </button>
+        <button style="padding: 10px 20px; font-size: 16px;">
+            <span class="icon icon-shield"></span> Defender
+        </button>
+        <button style="padding: 10px 20px; font-size: 16px;">
+            <span class="icon icon-heart"></span> Curar
+        </button>
+    </div>
+
+    <div class="demo-section">
+        <h2>Uso en listas</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="padding: 10px;">
+                <span class="icon icon-sword"></span> Espada
+            </li>
+            <li style="padding: 10px;">
+                <span class="icon icon-shield"></span> Escudo
+            </li>
+            <li style="padding: 10px;">
+                <span class="icon icon-heart"></span> Corazón
+            </li>
+        </ul>
+    </div>
+
+    <div class="demo-section">
+        <h2>Personalización con CSS</h2>
+        <style>
+            .icon-custom {
+                filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+            }
+            .icon-red {
+                filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+            }
+            .icon-blue {
+                filter: brightness(0) saturate(100%) invert(27%) sepia(98%) saturate(2878%) hue-rotate(200deg) brightness(104%) contrast(97%);
+            }
+        </style>
+        <div class="icon-demo">
+            <span class="icon icon-lg icon-sword icon-custom"></span>
+            <div>Con sombra</div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-lg icon-sword icon-red"></span>
+            <div>Rojo</div>
+        </div>
+        <div class="icon-demo">
+            <span class="icon icon-lg icon-sword icon-blue"></span>
+            <div>Azul</div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons CDN - Colección de íconos SVG</title>
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #667eea;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 150px;
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .code-block code {
+            color: #f8f8f2;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .icon-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .icon-card .icon {
+            margin-bottom: 10px;
+        }
+        .icon-name {
+            font-size: 0.85em;
+            color: #666;
+            word-break: break-word;
+        }
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #5568d3;
+        }
+        .alert {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .alert strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Icons CDN</h1>
+        <p class="subtitle">Una colección de más de 4000 íconos SVG listos para usar en tus proyectos</p>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">4170</div>
+                <div class="stat-label">Íconos disponibles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">SVG escalables</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">CSS</div>
+                <div class="stat-label">Fácil de usar</div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>⚠️ Importante:</strong> Reemplaza <code>TU_USUARIO</code> en el código de abajo con tu usuario de GitHub para usar este CDN.
+        </div>
+
+        <div class="section">
+            <h2>🚀 Inicio rápido</h2>
+            <p>Incluye el CSS en tu HTML:</p>
+            <div class="code-block">
+&lt;link rel="stylesheet" href="https://TU_USUARIO.github.io/icons/icons.css"&gt;
+            </div>
+            <p>Usa los íconos con clases CSS:</p>
+            <div class="code-block">
+&lt;span class="icon icon-sword"&gt;&lt;/span&gt;
+&lt;span class="icon icon-lg icon-shield"&gt;&lt;/span&gt;
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📖 Ejemplos de uso</h2>
+            <div class="demo-grid">
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-sword"></span>
+                    <div class="icon-name">sword</div>
+                </div>
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-shield"></span>
+                    <div class="icon-name">shield</div>
+                </div>
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-heart"></span>
+                    <div class="icon-name">heart</div>
+                </div>
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-star"></span>
+                    <div class="icon-name">star</div>
+                </div>
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-crown"></span>
+                    <div class="icon-name">crown</div>
+                </div>
+                <div class="icon-card">
+                    <span class="icon icon-xl icon-dragon"></span>
+                    <div class="icon-name">dragon</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📚 Documentación</h2>
+            <p>Para más información sobre cómo usar este CDN, consulta el archivo <code>README.md</code> en el repositorio.</p>
+            <a href="example.html" class="btn">Ver ejemplo completo</a>
+            <a href="https://github.com/TU_USUARIO/icons" class="btn" target="_blank">Ver en GitHub</a>
+        </div>
+
+        <div class="section">
+            <h2>📝 Licencia</h2>
+            <p>Los íconos están bajo licencia Creative Commons 3.0 BY o CC0. Consulta <code>license.txt</code> para más detalles sobre los creadores originales.</p>
+        </div>
+    </div>
+</body>
+</html>
+
