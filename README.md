@@ -61,16 +61,16 @@ https://TU_USUARIO.github.io/icons/icons.css
 
 ```html
 <!-- Ícono básico -->
-<span class="icon icon-sword"></span>
+<span class="icons icons-wolf-howl"></span>
 
 <!-- Con tamaño pequeño -->
-<span class="icon icon-sm icon-sword"></span>
+<span class="icons icons-sm icons-wolf-howl"></span>
 
 <!-- Con tamaño grande -->
-<span class="icon icon-lg icon-sword"></span>
+<span class="icons icons-lg icons-wolf-howl"></span>
 
 <!-- Con tamaño extra grande -->
-<span class="icon icon-xl icon-sword"></span>
+<span class="icons icons-xl icons-wolf-howl"></span>
 ```
 
 ### 3. Ejemplos de uso
@@ -78,7 +78,7 @@ https://TU_USUARIO.github.io/icons/icons.css
 **En botones:**
 ```html
 <button>
-    <span class="icon icon-sword"></span> Atacar
+    <span class="icons icons-ancient-sword"></span> Atacar
 </button>
 ```
 
@@ -86,7 +86,7 @@ https://TU_USUARIO.github.io/icons/icons.css
 ```html
 <ul>
     <li>
-        <span class="icon icon-shield"></span> Escudo
+        <span class="icons icons-black-hand-shield"></span> Escudo
     </li>
 </ul>
 ```
@@ -94,29 +94,73 @@ https://TU_USUARIO.github.io/icons/icons.css
 **Con texto:**
 ```html
 <p>
-    <span class="icon icon-heart"></span> Vida: 100%
+    <span class="icons icons-half-heart"></span> Vida: 100%
 </p>
 ```
 
 ### 4. Personalización con CSS
 
-Los íconos son SVG, por lo que puedes personalizarlos fácilmente con CSS:
+Los íconos son SVG y puedes personalizarlos fácilmente con CSS. Los íconos usan máscaras CSS, lo que permite cambiar su color de forma sencilla.
+
+#### Cambiar el color de los íconos
+
+Puedes cambiar el color de los íconos de dos formas:
+
+**Opción 1: Usando la propiedad `color` (recomendado)**
+
+El ícono heredará el color del texto del elemento:
 
 ```css
-/* Cambiar color usando filtros */
-.icon-rojo {
-    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+/* Cambiar color usando la propiedad color */
+.mi-icono-rojo {
+    color: #ff0000; /* Rojo */
 }
 
+.mi-icono-azul {
+    color: #0066ff; /* Azul */
+}
+```
+
+```html
+<!-- Ejemplo de uso -->
+<span class="icons icons-sword" style="color: red;"></span>
+<span class="icons icons-shield" style="color: blue;"></span>
+```
+
+**Opción 2: Usando la propiedad `background-color`**
+
+Puedes sobrescribir el color directamente:
+
+```css
+.mi-icono-verde {
+    background-color: #00ff00; /* Verde */
+}
+```
+
+```html
+<!-- Ejemplo de uso -->
+<span class="icons icons-half-heart" style="background-color: green;"></span>
+```
+
+#### Otras personalizaciones
+
+```css
 /* Agregar sombra */
-.icon-con-sombra {
+.icons-con-sombra {
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
 }
 
 /* Cambiar tamaño personalizado */
-.icon-personalizado {
+.icons-personalizado {
     width: 3em;
     height: 3em;
+}
+
+/* Combinar color y tamaño */
+.icons-grande-rojo {
+    width: 2.5em;
+    height: 2.5em;
+    color: #ff0000;
 }
 ```
 
@@ -148,7 +192,7 @@ Para ver todos los íconos disponibles, puedes:
 ## 🎨 Nombres de clases
 
 Los nombres de las clases se generan automáticamente desde los nombres de los archivos SVG:
-- El nombre del archivo `sword.svg` se convierte en `.icon-sword`
+- El nombre del archivo `sword.svg` se convierte en `.icons-sword`
 - Los caracteres especiales se reemplazan por guiones
 - Si hay duplicados, se agrega el prefijo del creador
 
